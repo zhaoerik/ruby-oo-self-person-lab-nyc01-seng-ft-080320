@@ -4,31 +4,37 @@ class Person
     attr_reader :name 
     attr_accessor :happiness, :hygiene, :bank_account
 
-    def name (name) #, bank_account=25, happiness = 8, hygiene =8)
-        @name = name 
+    def initialize(name) #, bank_account=25, happiness = 8, hygiene =8)
+        @name = name
+        @bank_account = 25
+        @appiness = 8
+        @hygiene = 8
     end
 
-    def bank_account (bank_account = 25)
-        if bank_account < 0
-            bank_account = 0
+    def bank_account(balance)
+        @bank_account = balance
+        if @bank_account < 0
+            @bank_account = 0
         end
         @bank_account = bank_account
     end
 
-    def happiness(happiness = 8)
-        if happiness > 10
-            happiness = 10
-        elsif happiness < 0
-            happiness = 0
+    def happiness(num)
+        @happiness = num
+        if @happiness > 10
+            @happiness = 10
+        elsif @happiness < 0
+            @happiness = 0
         end
         @happiness = happiness       
     end
 
-    def hygiene(hygiene = 8) 
-        if hygiene > 10
-            hygiene = 10
-        elsif hygiene < 0
-            hygiene = 0
+    def hygiene(num)
+        @hygiene = num
+        if @hygiene > 10
+            @hygiene = 10
+        elsif @hygiene < 0
+            @hygiene = 0
         end
         @hygiene = hygiene
     end
