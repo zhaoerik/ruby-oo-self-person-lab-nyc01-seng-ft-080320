@@ -89,7 +89,3 @@ class Person
 
     
 end
-
-soroosh = Person.new("soroosh")
-
-# binding.pry
