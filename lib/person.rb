@@ -15,7 +15,6 @@ class Person
         if @bank_account < 0
             @bank_account = 0
         end
-        @bank_account = bank_account
     end
 
     def happiness(num)
@@ -24,8 +23,7 @@ class Person
             @happiness = 10
         elsif @happiness < 0
             @happiness = 0
-        end
-        @happiness = happiness       
+        end     
     end
 
     def hygiene(num)
@@ -35,7 +33,6 @@ class Person
         elsif @hygiene < 0
             @hygiene = 0
         end
-        @hygiene = hygiene
     end
 
     def clean?
