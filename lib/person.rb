@@ -1,13 +1,12 @@
-require 'pry'
 class Person
 
     attr_reader :name 
     attr_accessor :happiness, :hygiene, :bank_account
 
-    def initialize(name) #, bank_account=25, happiness = 8, hygiene =8)
+    def initialize(name)
         @name = name
         @bank_account = 25
-        @appiness = 8
+        @happiness = 8
         @hygiene = 8
     end
 
@@ -92,6 +91,4 @@ class Person
             "blah blah blah blah blah"
         end
     end
-
-    
 end
